@@ -11,3 +11,4 @@ banner = "
   -       -
 
 "
+puts banner
