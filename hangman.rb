@@ -2,13 +2,15 @@ banner = "
      _____
     |     |
     |     |
-     ¯¯¯¯¯
+     ¯¯|¯¯
     \  |  /
      \ | /
        |
       / \
-    /    \
-  -       -
-
+     /   \
+    -     -
 "
-puts banner
+puts banner.gsub(/\\/, "\\\\")
+
+words = ["hat", "cool", "email"]
+puts words.shuffle
