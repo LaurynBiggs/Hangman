@@ -1,13 +1,8 @@
-alphabet = ['a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'K', 'l',
-'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R' 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W', 'x', 'X',
+bad_letters = ['b', 'B', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'K', 'l', 
+'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R' 's', 'S', 'u', 'U', 'v', 'V', 'w', 'W', 'x', 'X', 
 'y', 'Y', 'z', 'Z']
 
-alphabet.values_at(0, 1, 4, 5, 38, 39)  # these are the letters that spell 'cat'
-
-def tries(num)
-  num = 3.times
-  person
-end
+good_letters = ['a', 'A', 'c', 'C', 't', 'T']
 
 puts "Welcome to Hangman!
       The rules are simple:
@@ -16,9 +11,19 @@ puts "Welcome to Hangman!
       if not correct, a body part appears on the screen
       win by not completing the whole man, enjoy! Type a letter in"
 
-if gets.chomp == 'a' or 'A'
+# if user == 97.chr || 65.chr
+#   user == true
+#   puts 'correct'
+
+user = gets.chomp
+
+if user == good_letters 
+  user == true
   puts 'correct'
-end 
+else user == bad_letters
+  user == false
+  puts 'wrong'
+end
 
 #person = gets.chomp
 # if person == alphabet.values_at[4, 5]
