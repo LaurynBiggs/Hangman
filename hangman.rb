@@ -1,49 +1,64 @@
-bad_letters = ['b', 'B', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'K', 'l', 
-'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R' 's', 'S', 'u', 'U', 'v', 'V', 'w', 'W', 'x', 'X', 
-'y', 'Y', 'z', 'Z']
-
-good_letters = ['a', 'A', 'c', 'C', 't', 'T']
-
 puts "Welcome to Hangman!
       The rules are simple:
       type on a letter to see if it is correct
       if correct, the letter appears on the screen
       if not correct, a body part appears on the screen
-      win by not completing the whole man, enjoy! Type a letter in"
-
-# if user == 97.chr || 65.chr
-#   user == true
-#   puts 'correct'
+      win completing the word, lose by completing the whole man, enjoy!
+      Type a letter in"
 
 user = gets.chomp
-
-if user == good_letters 
-  user == true
-  puts 'correct'
-else user == bad_letters
-  user == false
-  puts 'wrong'
+if user == 'c' or user == 'C' 
+      user == true
+      puts 'correct, now another'
+      gets.chomp
+elsif user == 'a' or user == 'A'
+      user == true 
+      puts 'correct, now anther'
+      gets.chomp
+elsif  user == 't' or user == 'T'
+      user == true
+      puts 'correct, now another'
+      gets.chomp
+else user == 'a' & 'c' & 't' | 'A' & 'C' & 'T'
+      puts "Excellent! You spelled the whole word: Cat"
 end
-
-#person = gets.chomp
-# if person == alphabet.values_at[4, 5]
-#   person == true
-#     puts "great job! now another. c _ _"
-#     gets.chomp
-#     3.times
-# elsif person == alphabet.values_at[0, 1]
-#   person == true
-#     puts "great job! now another. _ a _"
-#     gets.chomp
-#     3.times
-# elsif person == alphabet.values_at[38, 39]
-#   person == true
-#     puts "great job! now another. _ _ t"
-#     gets.chomp
-#     3.times
-# else person != alphabet.values_at(0, 1, 4, 5, 38, 39)
-#   person == false
-#   until person == 3
-#     puts "Wrong! Try again _ _ _"
-#   end 
-#end
+# elsif user != 'c' or 'C' or 'a' or 'A' or 't' or 'T'
+#       user == false
+#       puts 'wrong, try again'
+# #   puts '
+# #   _____
+# #  | x x |
+# #  |  ^  |
+# #   --|-- '
+#       gets.chomp
+# elsif user != 'a' or 'A' or 'c' or 'C' or 't' or 'T'
+#       user == false
+#       puts 'wrong, try again'
+#       # puts '
+#       #  _____
+#       # | x x |
+#       # |  ^  |
+#       #  --|-- 
+#       #   /|\
+#       #  / | \
+#       # /  |  \ '
+#       gets.chomp
+# elsif user != 't' or 'T' or 'a' or 'A' or 'c' or 'C'
+#   user == false 
+#   puts 'wrong, try again'
+# #   puts '
+# #    _____
+# #   | x x |
+# #   |  ^  |
+# #    --|-- 
+# #     /|\
+# #    / | \
+# #   /  |  \ 
+# #     / \
+# #    /   \
+# #   /     \ '
+#       puts 'you lost'
+# else user == "a" | 'A' & 'c' | 'C' & 't' | 'T'
+#       user == true
+#       puts 'Great job! You spelled out the whole word, cat'
+# end
