@@ -6,59 +6,24 @@ puts "Welcome to Hangman!
       win completing the word, lose by completing the whole man, enjoy!
       Type a letter in"
 
-user = gets.chomp
-if user == 'c' or user == 'C' 
+count = 0
+while true
+      user = gets.chomp
+      if user != 3.times
+            count += 1
+            user == 3.times
+            puts 'Excellent! You spelled the whole word: Cat'
+            count == 3 
+            break
+      end
+if    user == 'a' or user == 'A'
       user == true
       puts 'correct, now another'
-      gets.chomp
-elsif user == 'a' or user == 'A'
-      user == true 
-      puts 'correct, now anther'
-      gets.chomp
-elsif  user == 't' or user == 'T'
+elsif user == 'c' or user == 'C'
       user == true
       puts 'correct, now another'
-      gets.chomp
-else user == 'a' & 'c' & 't' | 'A' & 'C' & 'T'
-      puts "Excellent! You spelled the whole word: Cat"
+else user == 't' or user == 'T'
+      user == true
+      puts 'correct, now another'
 end
-# elsif user != 'c' or 'C' or 'a' or 'A' or 't' or 'T'
-#       user == false
-#       puts 'wrong, try again'
-# #   puts '
-# #   _____
-# #  | x x |
-# #  |  ^  |
-# #   --|-- '
-#       gets.chomp
-# elsif user != 'a' or 'A' or 'c' or 'C' or 't' or 'T'
-#       user == false
-#       puts 'wrong, try again'
-#       # puts '
-#       #  _____
-#       # | x x |
-#       # |  ^  |
-#       #  --|-- 
-#       #   /|\
-#       #  / | \
-#       # /  |  \ '
-#       gets.chomp
-# elsif user != 't' or 'T' or 'a' or 'A' or 'c' or 'C'
-#   user == false 
-#   puts 'wrong, try again'
-# #   puts '
-# #    _____
-# #   | x x |
-# #   |  ^  |
-# #    --|-- 
-# #     /|\
-# #    / | \
-# #   /  |  \ 
-# #     / \
-# #    /   \
-# #   /     \ '
-#       puts 'you lost'
-# else user == "a" | 'A' & 'c' | 'C' & 't' | 'T'
-#       user == true
-#       puts 'Great job! You spelled out the whole word, cat'
-# end
+end
