@@ -1,29 +1,31 @@
 puts "Welcome to Hangman!
       The rules are simple:
-      type on a letter to see if it is correct
-      if correct, the letter appears on the screen
-      if not correct, a body part appears on the screen
-      win completing the word, lose by completing the whole man, enjoy!
-      Type a letter in"
+      Type a letter in to see if it is correct.
+      If correct, input comes out saying, 'correct, now another' and move on.
+      If not correct, input comes out saying, 'wrong, try again' and a body part appears on the screen
+      Win completing the whole word, lose by completing the whole man, enjoy!
+      Note: no letter repeats itself in this game and there are three letters. Start typin' a letter in"
 
-count = 0
-while true
-      user = gets.chomp
-      if user != 3.times
-            count += 1
-            user == 3.times
-            puts 'Excellent! You spelled the whole word: Cat'
-            count == 3 
-            break
-      end
-if    user == 'a' or user == 'A'
-      user == true
-      puts 'correct, now another'
-elsif user == 'c' or user == 'C'
-      user == true
-      puts 'correct, now another'
-else user == 't' or user == 'T'
-      user == true
-      puts 'correct, now another'
+user = gets.chomp
+for b in 1..2 do
+      gets.chomp 
 end
-end
+# if    user == 'a' #or user == 'A'
+#       user == true
+#       puts 'correct, now another'
+# elsif user == 'c' #or user == 'C'
+#       user == true
+#       puts 'correct, now another'
+# elsif user == 't' #or user == 'T'
+#       user == true
+#       puts 'correct, now another'
+# elsif user == 'a' & 'c' & 't'
+#       user == true
+#       puts 'Yay! You spelled the whole word: Cat'
+#       exit
+# else  user != 'a' & 'c' & 't'
+#       user == false
+#       puts 'Game Over. Man, you really suck at this game and word was only cat'
+#       exit
+# end
+# end
