@@ -6,26 +6,16 @@ puts "Welcome to Hangman!
       Win completing the whole word, lose by completing the whole man, enjoy!
       Note: no letter repeats itself in this game and there are three letters. Start typin' a letter in"
 
-user = gets.chomp
-for b in 1..2 do
-      gets.chomp 
+def user
+      for a in 0..2 do
+            gets.chomp
+            puts "correct, now another" 
+      end
 end
-# if    user == 'a' #or user == 'A'
-#       user == true
-#       puts 'correct, now another'
-# elsif user == 'c' #or user == 'C'
-#       user == true
-#       puts 'correct, now another'
-# elsif user == 't' #or user == 'T'
-#       user == true
-#       puts 'correct, now another'
-# elsif user == 'a' & 'c' & 't'
-#       user == true
-#       puts 'Yay! You spelled the whole word: Cat'
-#       exit
-# else  user != 'a' & 'c' & 't'
-#       user == false
-#       puts 'Game Over. Man, you really suck at this game and word was only cat'
-#       exit
-# end
+user
+# if    user == 'a' or user == 'A'
+      # elsif user == 'c' or user == 'C'
+      # else user == 't' or user == 'T'
+      # else  user.to_s.empty?
+      #       puts 'you didnt even put a word in, try again'
 # end
