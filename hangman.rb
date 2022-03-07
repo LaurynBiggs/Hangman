@@ -7,20 +7,27 @@ puts "Welcome to Hangman!
       Win completing the whole word, lose by completing the whole man, enjoy!
       Note: no letter repeats itself in this game and there are three letters. Start typin' a letter in"
 
-# second, make a for loop so it can go the letters
-for str in 0..2 do
-      gets.chomp
+# second, make a loop so it can go the letters
 # third, process the letters and see if they match the predefined word.
-      case str
-            when "a"
-                  puts "correct, now another"
-            when "c"
-                  puts "correct, now another"
-            when "t"
-                  puts "correct, now another"
-            else 
-                  puts "wrong, try again"
-            end
+
+loop do
+
+word = ['c', 'a', 't']
+input = gets.chomp.downcase
+if input == word
+      break
+end
+
+      case input
+      when 'a'
+            puts 'correct, now another'
+      when 'c'
+            puts 'correct, now another'
+      when 't'
+            puts 'correct, now another'
+      else 
+            puts 'wrong, try again'
+      end
 end
 # fourth and final, display ASCII art to the screen if the letters are wrong.
 
