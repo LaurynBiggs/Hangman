@@ -9,14 +9,8 @@ puts "Welcome to Hangman!
 
 # second, make a loop so it can go the letters
 # third, process the letters and see if they match the predefined word.
-
-loop do
-
-word = ['c', 'a', 't']
+for input in 0..2 do
 input = gets.chomp.downcase
-if input == word
-      break
-end
 
       case input
       when 'a'
