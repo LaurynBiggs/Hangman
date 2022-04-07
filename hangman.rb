@@ -12,6 +12,19 @@ puts "Welcome to Hangman!
 for input in 0..2 do
 input = gets.chomp.downcase
 
+Steve = { head: '                 _____
+                / X X \
+                |  ^  |
+                \_____/',
+    upper_body: '                   |
+                  /|\
+                 / | \
+                /  |  \ ',
+   lower_body: '                   |
+                  / \ 
+                 /   \ 
+                /     \ ' }
+    
       case input
       when 'a'
             puts 'correct, now another'
@@ -21,9 +34,11 @@ input = gets.chomp.downcase
             puts 'correct, now another'
       else 
             puts 'wrong, try again'
+            Steve.each_value do |value|
+                  puts value
+            end
       end
 end
 # fourth and final, display ASCII art to the screen if the letters are wrong.
-
 # if you did these steps correctly Lauryn,
 # then congrats! You succesfully made a hangman game.
